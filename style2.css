@@ -1,0 +1,745 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    background-color: white;
+    min-height: 100vh;
+}
+
+.header {
+    background-color: #000;
+    color: #fff;
+}
+.heading {
+    text-align: center;
+    letter-spacing: 2px; /* Add spacing between letters */
+    font-size: 10px; /* Make headings slightly larger than the body text */
+}
+
+.contact-info, .returns {
+    
+    font-size: 10px; /* Make headings slightly larger than the body text */
+    margin-bottom: 20px; /* Add some space between sections */
+}
+.phone-number {
+    text-decoration: underline; /* Underline the phone number */
+}
+.social-icons {
+    display: flex;
+    align-items: center;
+}
+
+.social-icons img {
+    width: 25px;
+    margin-left: 5px;
+    filter: invert(1);
+}
+.top-bar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 4rem;
+padding-top: 2rem;
+    font-size: 0.9em;
+    text-align: center; /* Center text within each element */
+    background-color: black; /* Optional: background color for better visibility */
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-bottom: 2px solid #333;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Distribute items evenly */
+    align-items: center;
+    background-color: #1C1D1D; /* Background color for the navbar */
+    padding: 10px 20px;
+}
+
+/* Style for the logo */
+.logo img {
+    width: 100px; /* Set the width of the logo */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Style for the navigation links */
+.nav-links a {
+    text-decoration: none; /* Remove underline */
+    color: white; /* Text color for links */
+    margin-right: 20px; /* Add spacing between links */
+    font-size: 10px; /* Set the size of icons */
+}
+
+/* Style for contact links/icons */
+.contact-links a {
+    text-decoration: none; /* Remove underline */
+    color: white; /* Text color for icons */
+    margin-left: 10px; /* Add spacing between icons */
+    font-size: 5px; /* Set the size of icons */
+}
+
+/* Additional styling for icons */
+.contact-links a i {
+    font-size: 5px; /* Set the size of icons */
+}
+
+/* Hover effect for navigation links */
+.nav-links a:hover {
+    color: #007bff; /* Change color on hover */
+}
+.navBottom {
+    background-color: #1C1D1D;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    height: 3rem;
+}
+.navBottom a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+.navBottom a:hover {
+    background-color: #555;
+}
+.navBottom .company-logo img {
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+}
+.navBottom .navbar-icons-left,
+.navBottom .navbar-icons-right {
+    display: flex;
+    align-items: center;
+}
+.navBottom .navbar-icons-left a,
+.navBottom .navbar-icons-right a {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-size: 20px;
+    margin-right: 10px;
+}
+@media (max-width: 768px) {
+    .top-bar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-links, .contact-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+/* BEGIN CARD DESIGN */
+.hero {
+    display: inline-block;
+    position: relative;
+    width: 400px;
+    min-width: 400px;
+    height: 400px;
+    border-radius: 30px;
+    overflow:hidden;
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.3);
+    margin: 30px;
+  }
+  
+  .hero-profile-img {
+    height: 70%;
+  }
+  
+  .hero-description-bk {
+    background-image: linear-gradient(0deg , #3f5efb, #fc466b);
+    border-radius: 30px;
+    position: absolute;
+    top: 55%;
+    left: -5px;
+    height: 65%;
+    width: 108%;
+    transform: skew(19deg, -9deg);
+  }
+
+  
+  .hero-logo {
+    height: 80px;
+    width: 80px;
+    border-radius: 20px;
+    background-color: #fff;
+    position: absolute;
+    bottom: 30%;
+    left: 30px;
+    overflow:hidden;
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.7);
+  }
+  
+.hero-card {
+    position: relative;
+    text-align: center;
+    margin-bottom: 30px; /* Adjust spacing between hero cards */
+  }
+  
+  .hero-profile-img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .hero-content {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: #fff;
+  }
+  
+  .hero-date {
+    letter-spacing: 3px;
+    font-size: 10px;
+  }
+  
+  .hero-btn a {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 1px solid #fff;
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .heroSection {
+    text-align: center;
+  }
+  
+  .heroSection img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .btn i:before {
+    width: 14px;
+    height: 14px;
+    position: fixed;
+    color: #fff;
+    background: #0077B5;
+    padding: 10px;
+    border-radius: 50%;
+    top:5px;
+    right:5px;
+  }
+  .contact-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.contact-links a {
+    margin: 0 5px;
+}
+.contact-links img {
+    width: 12px; /* Adjust the width of the icons */
+    height: 12px; /* Adjust the height of the icons */
+    filter: invert(1); /* Invert colors to turn icons white */
+}
+
+.navbar-icons-right {
+    display: flex;
+    align-items: center;
+}
+.icon-container {
+    display: flex;
+    align-items: center;
+}
+.size1 {
+    width: 20px; /* Adjust the width of the icons */
+    height: 20px; /* Adjust the height of the icons */
+    margin-right: 10px;
+}
+.size1:hover {
+    opacity: 0.7; /* Optional: reduce opacity on hover */
+}
+/* Set all icons to be white using filter: invert(1) */
+.icon-container img {
+    filter: invert(1);
+}
+.herosection {
+    height: 100vh; /* Set section height to full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('https://en-pk.svestonwatches.com/cdn/shop/files/04_Banner_74eb1f02-b695-47e5-b686-88a527c2356a.jpg?v=1714207878&width=2400');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+}
+.psize {
+    max-width: 100%; /* Ensure image does not exceed container width */
+    height: auto; /* Maintain image aspect ratio */
+}
+.ptext {
+    font-size: 36px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add text shadow for contrast */
+}
+.first.hero, .second.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center; 
+    width: 100%;
+    max-width: 100%; 
+    margin: 0 auto; 
+    padding: 10px;
+  }
+  .hero-btn {
+    display: inline-block;
+    border-radius: 10px 0 0 10px; /* Half-rounded border on the left */
+    overflow: hidden; /* Ensure the border-radius is applied correctly */
+  }
+
+  .hero-btn a {
+    display: block;
+    width: 100%; /* Set the button width to be half of its container */
+    padding: 10px;
+    font-size: 10px;
+    letter-spacing: 2px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    background-color: black; /* Black background color */
+    border: none; /* Remove border */
+    border-radius: 0 10px 10px 0; /* Half-rounded border on the right */
+    box-sizing: border-box; /* Include padding in width calculation */
+  }
+  .hero-price {
+    text-align: center;
+  }
+
+  .original-price, .sale-price {
+    display: inline-block;
+    vertical-align: middle; /* Align elements vertically in the middle */
+  }
+
+  .original-price {
+    text-decoration: line-through; /* Apply strikethrough style */
+    color: black; /* Customize the color of the strikethrough */
+    margin-right: 5px; /* Optional: Add spacing between prices */
+    font-size: 13px;
+  }
+
+  .sale-price {
+    font-weight: bold;
+    font-size: 13px;
+    color: black; /* Customize the color of the sale price */
+  }
+  .container {
+    max-width: 100%;
+    margin-left: 30px;
+    padding: 20px;
+}
+
+h1 {
+    letter-spacing: 3px;
+    font-weight: bold;
+    color: #333;
+    font-size: 20px;
+}
+
+h2 {
+    letter-spacing: 1px;
+    font-weight: bold;
+    color: black;
+    font-size: 18px;
+}
+
+p {
+    line-height: 1.6;
+    font-size: 12px;
+    letter-spacing: 1px;
+    margin-top: 0.3rem;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 20px;
+}
+
+strong {
+    font-weight: bold;
+}
+
+/* Optional: Style hyperlinks */
+a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #0056b3;
+}
+.containerTable {
+    max-width: 800px;
+    padding: 20px;
+}
+
+
+.smartwatch-table {
+    width: 50%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.smartwatch-table th, .smartwatch-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+    font-size: 12px;
+}
+
+.smartwatch-table th {
+    color: black;
+}
+
+.smartwatch-table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.smartwatch-table tbody tr:hover {
+    background-color: #ddd;
+}
+* {
+    margin: 0;
+    padding: 0;
+  }
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  
+  .footer {
+      background-color:#111111 ;
+      color: #fff;
+  }
+  
+  
+  .footer-content {
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 1230px;
+      position: relative;
+      max-height: 15px;
+
+  }
+  
+  .footer-content-column {
+      box-sizing: border-box;
+      float: left;
+      padding-left: 15px;
+      padding-right: 15px;
+      width: 100%;
+      color: #fff;
+
+  }
+  
+  .footer-content-column ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .footer-logo-link {
+      display: inline-block;
+  }
+  .footer-menu {
+      margin-top: 30px;
+  }
+  
+  .footer-menu-name {
+      color: #fffff2;
+      font-size:13px;
+      font-weight: 900;
+      letter-spacing: .1em;
+      line-height: 18px;
+      margin-bottom: 2rem;
+      margin-top: 0;
+      text-transform: uppercase;
+  }
+  .footer-menu-list {
+      list-style: none;
+      margin-bottom: 0;
+      margin-top: 10px;
+      padding-left: 0;
+  }
+  .footer-menu-list li {
+      margin-top: 5px;
+      font-size: 13px;
+
+  }
+  
+  .footer-call-to-action-description {
+      color: #fffff2;
+      margin-top: 10px;
+      margin-bottom: 20px;
+  }
+  .footer-call-to-action-button:hover {
+      background-color: #fffff2;
+      color: #00bef0;
+  }
+  .button:last-of-type {
+      margin-right: 0;
+  }
+  .footer-call-to-action-button {
+      background-color: white;
+      border-radius: 21px;
+      color: black;
+      display: inline-block;
+      font-size: 9px;
+      font-weight: 900;
+      letter-spacing: .1em;
+      line-height: 18px;
+      padding: 12px 30px;
+      margin: 0 10px 10px 0;
+      text-decoration: none;
+      text-transform: uppercase;
+      transition: background-color .2s;
+      cursor: pointer;
+      position: relative;
+  }
+  .footer-call-to-action {
+      margin-top: 30px;
+  }
+  .footer-call-to-action-title {
+      color: #fffff2;
+      font-size: 14px;
+      font-weight: 900;
+      letter-spacing: .1em;
+      line-height: 18px;
+      margin-bottom: 0;
+      margin-top: 0;
+      text-transform: uppercase;
+  }
+  .footer-call-to-action-link-wrapper {
+      margin-bottom: 0;
+      margin-top: 10px;
+      color: #fff;
+      text-decoration: none;
+  }
+  .footer-call-to-action-link-wrapper a {
+      color: #fff;
+      text-decoration: none;
+  }
+  .hidden-link-text {
+      position: absolute;
+      clip: rect(1px 1px 1px 1px);
+      clip: rect(1px,1px,1px,1px);
+      -webkit-clip-path: inset(0px 0px 99.9% 99.9%);
+      clip-path: inset(0px 0px 99.9% 99.9%);
+      overflow: hidden;
+      height: 1px;
+      width: 1px;
+      padding: 0;
+      border: 0;
+      top: 50%;
+  }
+  
+  .footer-social-icon-svg {
+      display: block;
+  }
+  
+  .footer-social-icon-path {
+      fill: #fffff2;
+      transition: fill .2s;
+  }
+  
+  .footer-social-link.twitter {
+      height: 28px;
+      left: 62px;
+      top: 3px;
+      width: 28px;
+  }
+  
+  .footer-social-link.youtube {
+      height: 24px;
+      left: 123px;
+      top: 12px;
+      width: 24px;
+  }
+  
+  .footer-social-link.github {
+      height: 34px;
+      left: 172px;
+      top: 7px;
+      width: 34px;
+  }
+  
+  .footer-copyright {
+      background-color: #111111;
+      color: #fff;
+      padding: 15px 30px;
+    text-align: center;
+  }
+  
+  .footer-copyright-wrapper {
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 1200px;
+  }
+  
+  .footer-copyright-text {
+    color: #fff;
+      font-size: 10px;
+      font-weight: 400;
+      line-height: 18px;
+      margin-bottom: 0;
+      margin-top: 0;
+  }
+  
+  .footer-copyright-link {
+      color: #fff;
+      text-decoration: none;
+  }
+  
+  
+  
+  
+  
+  
+  
+  /* Media Query For different screens */
+  @media (min-width:320px) and (max-width:479px)  { /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
+    .footer-content {
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 1230px;
+      padding: 40px 15px 1050px;
+      position: relative;
+    }
+  }
+  @media (min-width:480px) and (max-width:599px)  { /* smartphones, Android phones, landscape iPhone */
+    .footer-content {
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 1230px;
+      padding: 40px 15px 1050px;
+      position: relative;
+    }
+  }
+  @media (min-width:600px) and (max-width: 800px)  { /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
+    .footer-content {
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 1230px;
+      padding: 40px 15px 1050px;
+      position: relative;
+    }
+  }
+  @media (min-width:801px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */
+  
+  }
+  @media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */
+  
+  }
+  @media (min-width:1281px) { /* hi-res laptops and desktops */
+  
+  }
+  
+  
+  
+  
+  @media (min-width: 760px) {
+    .footer-content {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1230px;
+        padding: 40px 15px 450px;
+        position: relative;
+    }
+  
+    .footer-wave-svg {
+        height: 50px;
+    }
+  
+    .footer-content-column {
+        width: 24.99%;
+    }
+  }
+  @media (min-width: 568px) {
+    /* .footer-content-column {
+        width: 49.99%;
+    } */
+  }
+  
+  .hero-container-bottom {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center; 
+    width: 100%;
+    max-width: 100%; 
+    margin: 0 auto; 
+    padding: 10px;
+    background-color: white;
+  }
+  .first.hero.bottom, .second.hero.bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+  
+  }
+  .card {
+    display: inline-block;
+    position: relative;
+    width: 400px;
+    min-width: 400px;
+    height: 400px;
+    border-radius: 30px;
+    overflow:hidden;
+    margin: 30px;
+    text-align: center;
+  }
+  .centered-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;     /* Center vertically */          /* Full viewport height to center in the middle of the screen */
+    text-align: center;
+    background-color: white;
+    padding: 4px;
+    margin-top: 10px;
+  }
+  
+  .centered-heading {
+    font-size: 1em;          /* Adjust font size as needed */
+    margin: 0;               /* Remove default margin */
+    color: black;
+  }
